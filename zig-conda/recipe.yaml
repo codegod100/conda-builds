@@ -1,0 +1,27 @@
+context:
+  name: zig
+  version: 0.11.0
+
+package:
+  name: ${{name}}
+  version: ${{version}}
+
+source:
+  git_url: https://github.com/ziglang/${{name}}.git
+  git_rev: ${{version}}
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - cmake
+    - gcc
+    - libgcc-ng
+    - libstdcxx-ng
+    - libclang-cpp13
+    - libllvm13
+    - cxx-compiler
+    - llvm
+    - llvm-tools
+    - llvmlite

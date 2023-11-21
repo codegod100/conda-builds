@@ -1,0 +1,15 @@
+context:
+  version: 7.1.0
+  name: neofetch
+
+package:
+  name: ${{name}}
+  version: ${{version}}
+
+source:
+  git_url: https://github.com/dylanaraps/${{name}}.git
+  git_rev: ${{version}}
+
+build:
+  number: 1
+  noarch: generic

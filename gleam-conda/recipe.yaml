@@ -1,0 +1,11 @@
+context:
+  name: gleam
+  version: 0.32.4
+
+package:
+  name: ${{name}}
+  version: ${{version}}
+
+build:
+  number: 1
+  noarch: generic

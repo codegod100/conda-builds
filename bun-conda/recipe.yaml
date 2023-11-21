@@ -1,0 +1,12 @@
+context:
+  name: bun
+  version: 1.0.12
+
+package:
+  name: ${{name}}
+  version: ${{version}}
+
+
+build:
+  number: 2
+  noarch: generic
